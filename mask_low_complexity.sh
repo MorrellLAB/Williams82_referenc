@@ -10,6 +10,8 @@
 #SBATCH -o %j.out
 #SBATCH -e %j.err
 
+# Original Author of the script: Chaochih Liu
+
 # Dependencies
 module load java/openjdk-8_202
 module load python3/3.8.3_anaconda2020.07_mamba
