@@ -3,9 +3,9 @@
 #SBATCH --ntasks-per-node=16
 #SBATCH --mem=12gb
 #SBATCH --tmp=8gb
-#SBATCH -t 00:30:00
+#SBATCH -t 00:10:00
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=liang797@umn.edu
+#SBATCH --mail-user=liux1299@umn.edu
 #SBATCH -p small,ram256g,ram1t
 #SBATCH -o %j.out
 #SBATCH -e %j.err
@@ -17,7 +17,7 @@ module load java/openjdk-8_202
 module load python3/3.8.3_anaconda2020.07_mamba
 
 # User provided input arguments
-REF_FASTA="/home/morrellp/liang797/Shared/References/Reference_Sequences/Soybean/PhytozomeV11/Gmax/assembly/Gmax_275_v2.0.fa"
+REF_FASTA="/panfs/jay/groups/9/morrellp/shared/References/Reference_Sequences/Soybean/PhytozomeV11/Gmax/assembly/Gmax_275_v2.0.fa"
 # See bbmask documentation for picking entropy value: https://jgi.doe.gov/data-and-tools/software-tools/bbtools/bb-tools-user-guide/bbmask-guide/
 # Experiment with multiple values
 ENTROPY1="0.7"
